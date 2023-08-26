@@ -1,0 +1,33 @@
+.UlStyle {
+  background-color: darkgray;
+  display: flex;
+  width: inherit;
+  height: 50px;
+  place-content: center;
+  place-items: center;
+  min-width: 320px;
+  position: relative;
+}
+
+.BtnPosition {
+  position: absolute;
+  right: 10px;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .UlStyle {
+    height: 50px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    background-color: red;
+  }
+  .BtnPosition {
+    border-radius: 5px;
+    color: whitesmoke;
+    background: none;
+    border: none;
+  }
+}

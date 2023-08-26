@@ -10,7 +10,7 @@ export default function AboutMe() {
         
     return (
         <>
-            <div style={divStl}>
+            <div style={divStl} className="divStl">
                 <h3>Um Pouco Sobre MIM</h3>
                 {BtnMore && <p className="PStl" style={PStl}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis voluptatibus natus eos similique eaque et ad repellat. Nostrum asperiores cum at nemo eveniet optio officiis inventore tenetur nam, quod esse!
                     Natus fuga nesciunt minus? Recusandae, consequuntur voluptate? Minus, aliquam. Vitae, tempora rerum. Hic cumque exercitationem doloribus incidunt a corrupti sed, nulla accusantium facere neque. Vero doloremque vel asperiores officiis odit?
@@ -18,6 +18,7 @@ export default function AboutMe() {
                 </p>}
                 <button
                 onClick={handleBtn}
+                    className={BtnMore ? "btnHeigth" : ""}
                     style={BntStl}>{"Ver Mais > "}</button>
             </div>
         </>

@@ -1,13 +1,12 @@
 import React from "react";
-import StyleHeader from "./Styles/StylesHeader";
+import './Styles/StylesHeader.css'
 
 export default function Header() {
-    const {UlStyle} = StyleHeader;
 
     return (
         <>
-            <ul style={UlStyle}>
-                <button>testesdfsd</button>
+            <ul  className="UlStyle">
+                <button className="BtnPosition">Menu</button>
             </ul>
         </>)
 }

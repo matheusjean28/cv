@@ -1,32 +1,58 @@
-
 .PStl {
-	-webkit-animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-            display: none;
+  -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  max-height: 200px;
+  overflow: hidden;
+  white-space: wrap 80%;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+.btnHeigth {
+  margin-top: 20px !important;
+  transition: ease-in-out 0.5s;
+  background-color: red;
+  color: red;
+}
+.divStl {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  padding: 50px 100px;
+  text-align: left;
+  position: relative
+  
+}
+@media screen and (max-width: 600px) {
+  .divStl {
+    padding: 50px;
+    background-color: red ;
+  }
 }
 
 
- @-webkit-keyframes text-focus-in {
+/* animations */
+@-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
