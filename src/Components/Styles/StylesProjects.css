@@ -1,0 +1,8 @@
+.Projects {
+  display: flex;
+  background-color: red;
+  padding: 50px 100px;
+  height: 500px;
+  max-height: 500px;
+}
+

@@ -14,22 +14,21 @@
   background-color: red;
   color: red;
 }
+
 .divStl {
   display: flex;
   flex-direction: column;
   height: 500px;
   padding: 50px 100px;
   text-align: left;
-  position: relative
-  
+  position: relative;
 }
 @media screen and (max-width: 600px) {
   .divStl {
     padding: 50px;
-    background-color: red ;
+    background-color: red;
   }
 }
-
 
 /* animations */
 @-webkit-keyframes text-focus-in {

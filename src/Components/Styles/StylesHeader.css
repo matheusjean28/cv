@@ -12,10 +12,12 @@
 .BtnPosition {
   position: absolute;
   right: 10px;
-  border-radius: 15px;
+  background: none;
+  border: none;
   padding: 5px 10px;
 }
 
+/* media query area */
 @media screen and (max-width: 600px) {
   .UlStyle {
     height: 50px;
