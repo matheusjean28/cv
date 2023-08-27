@@ -4,5 +4,58 @@
   padding: 50px 100px;
   height: 500px;
   max-height: 500px;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
 }
 
+.UlProjects {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: inherit;
+}
+
+.LiProjects {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  justify-items: left;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 50px;
+}
+.PProjects {
+  font-size: 20px;
+}
+/* media query area */
+@media screen and (max-width: 600px) {
+  .Projects {
+    padding: 20px;
+    background-color: darkslateblue;
+    place-content: left;
+    place-items: left;
+    display: flex;
+  }
+  .UlProjects {
+    display: flex;
+    padding: 0;
+    justify-content: left;
+    text-align: left;
+    margin-top: 25px;
+  }
+  .PProjects {
+    font-size: 12px;
+    margin-top: 10px;
+  text-overflow: ellipsis;
+  flex-wrap: wrap 180px;
+  word-wrap: break-word;
+  }
+  .LiProjectsRight{
+    justify-content: right;
+    justify-items: right;
+    padding: 0;
+    text-align: right;
+  }
+  
+}
