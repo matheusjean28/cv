@@ -3,6 +3,7 @@ import Header from './Components/Header'
 import AboutMe from './Components/AboutMe'
 import Projects from './Components/Projects'
 import Frameworks from './Components/Frameworks'
+import FindMe from './Components/FindMe'
 function App() {
 
   return (
@@ -10,7 +11,8 @@ function App() {
     <Header/>
     {/* <AboutMe/> */}
     {/* <Projects/> */}
-    <Frameworks/>
+    {/* <Frameworks/> */}
+    <FindMe/>
     </>
   )
 }

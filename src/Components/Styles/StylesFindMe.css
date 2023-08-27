@@ -1,0 +1,28 @@
+.findMe {
+    background-color: aquamarine;
+    height: inherit;
+    color: gray;
+    padding: 25px 50px;
+    height: 500px;
+}
+.UlFindMe {
+    display:  grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    height: inherit;
+    gap: 5px;
+}
+
+.LiFindMe {
+    height: 100px;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(14, 174, 174);
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+}
+.PFindMe{
+ margin-bottom: 15px;   
+}
