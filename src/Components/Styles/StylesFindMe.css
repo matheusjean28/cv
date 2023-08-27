@@ -4,13 +4,20 @@
     color: gray;
     padding: 25px 50px;
     height: 500px;
+    text-align: left;
+    position: relative;
+}
+.PVindMeDescription{
+ font-size: 12px;
+ margin: 25px 0;
+
 }
 .UlFindMe {
     display:  grid;
     grid-template-columns: repeat(3, 1fr);
     list-style: none;
     height: inherit;
-    gap: 5px;
+    gap: 10px;
 }
 
 .LiFindMe {
@@ -22,7 +29,14 @@
     flex-direction: column;
     place-content: center;
     place-items: center;
+    margin-top: 25px;
 }
 .PFindMe{
  margin-bottom: 15px;   
+ font-size: 12px;
 }
+.LiFindMe > button{
+    border: none;
+    background:none;
+}
+
