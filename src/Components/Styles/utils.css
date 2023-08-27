@@ -4,7 +4,6 @@
   animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   max-height: 200px;
   overflow: hidden;
-  white-space: wrap 80%;
   text-overflow: ellipsis;
   word-wrap: break-word;
 }
@@ -18,7 +17,7 @@
 .divStl {
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 400px;
   padding: 50px 100px;
   text-align: left;
   position: relative;

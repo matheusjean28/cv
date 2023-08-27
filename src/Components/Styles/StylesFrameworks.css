@@ -1,0 +1,36 @@
+.frameworks{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    background-color: rgb(211, 160, 98);
+    padding: 25px 50px;
+    text-align: left;
+}
+
+.PFrameworks {
+    padding-right: 10%;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.UlFrameworks {
+    display:  grid;
+    margin-top: 25px;
+    height: inherit;
+    color: red;
+    list-style: none;
+    gap: 25px 10px;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    place-items: center;
+}
+
+.LiFrameworks {
+    height: 100px;
+    width: 100px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    place-content: center;
+    place-items: center ;
+}

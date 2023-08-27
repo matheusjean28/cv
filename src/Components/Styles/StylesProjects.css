@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  width: inherit;
+  height: inherit;
 }
 
 .LiProjects {
@@ -21,17 +21,38 @@
   flex-direction: column;
   justify-content: left;
   justify-items: left;
-  padding: 0;
+  padding: 5px 0;
+
   text-align: left;
-  margin-bottom: 50px;
+  padding-right: 45%;
 }
 .PProjects {
   font-size: 20px;
 }
+.BtnProjects {
+  display: flex;
+  border: 1px solid darkgray;
+  width: 50px;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 0 5px;
+  font-weight: bolder;
+}
+
+.animation {
+  margin: 0;
+  padding: 0;
+  height: inherit;
+  display: flex;
+  place-content: center;
+
+}
+
 /* media query area */
 @media screen and (max-width: 600px) {
   .Projects {
-    padding: 20px;
+    padding: 50px;
+    height: 400px;
     background-color: darkslateblue;
     place-content: left;
     place-items: left;
@@ -47,15 +68,21 @@
   .PProjects {
     font-size: 12px;
     margin-top: 10px;
-  text-overflow: ellipsis;
-  flex-wrap: wrap 180px;
-  word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
   }
-  .LiProjectsRight{
+  .LiProjectsRigth {
     justify-content: right;
     justify-items: right;
-    padding: 0;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 50px;
+    padding-left: 45%;
   }
-  
+  .LiProjectsRigth > button {
+    margin-left: calc(100% - 50px);
+  }
 }
