@@ -1,10 +1,12 @@
 .CopyFindMe {
     background-color: rgb(0, 0, 0);
-    position: absolute;
-    bottom: 0px;
     display: flex;
     padding: 0 50px;
+    place-items: center;
+    gap: 10px;
     text-align: left;
+
+    margin-top: auto; 
 }
 
 .svgProfile {
