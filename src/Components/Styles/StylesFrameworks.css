@@ -1,36 +1,58 @@
-.frameworks{
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    background-color: rgb(211, 160, 98);
-    padding: 25px 50px;
-    text-align: left;
+.frameworks {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  padding: 50px 100px;
+  text-align: left;
+  color: var(--mainColor);
 }
 
 .PFrameworks {
-    padding-right: 10%;
-    font-size: 12px;
-    margin-top: 10px;
+  padding-right: 10%;
+  font-size: 12px;
+  margin-top: 10px;
 }
 
 .UlFrameworks {
-    display:  grid;
-    margin-top: 25px;
-    height: inherit;
-    color: red;
-    list-style: none;
-    gap: 25px 10px;
-    grid-template-columns: repeat(3, 1fr);
-    place-content: center;
-    place-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  height: inherit;
+  color: black;
+  font-weight: bolder;
+  list-style: none;
+  padding: 0;
 }
 
 .LiFrameworks {
-    height: 100px;
-    width: 100px;
-    background-color: aliceblue;
-    border-radius: 10px;
-    display: flex;
+  width: 100px;
+  height: 120px;
+  background-color: rgb(55, 70, 84);
+  border-radius: 10px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: inset 32px 32px 64px #bebebe, inset -32px -32px 64px #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+    .frameworks {
+        padding: 25px 50px;
+    }
+  .UlFrameworks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    gap: 5px;
+  }
+  .LiFrameworks {
+    height: 80px;
+    width: 80px;
+    font-size: 12px;
     place-content: center;
-    place-items: center ;
+    place-items: center;
+    display: flex;
+  }
 }

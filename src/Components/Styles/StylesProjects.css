@@ -1,6 +1,6 @@
 .Projects {
   display: flex;
-  background-color: red;
+  color: var(--mainColor);
   padding: 50px 100px;
   height: 500px;
   max-height: 500px;
@@ -10,13 +10,45 @@
 }
 
 .UlProjects {
-  display: flex;
   flex-direction: column;
   list-style: none;
-  height: inherit;
+  padding: 0;
 }
 
 .LiProjects {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  justify-items: left;
+  padding: 5px ;
+  
+  text-align: left;
+  padding-right: 45%;
+
+  
+}
+.PProjects {
+  font-size: 16px;
+}
+.BtnProjects {
+  display: flex;
+  width: fit-content;
+  border-radius: 5px;
+  border: none;
+  
+  padding: 5px 20px ;
+  font-weight: bolder;
+  border-radius: 50px;
+background: #e0e0e0;
+box-shadow: inset 16px 16px 32px #bebebe,
+            inset -16px -16px 32px #ffffff;
+}
+.BtnProjects > a {
+  text-decoration: none;
+  color: black;
+}
+
+.LiProjectsRigth {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -25,18 +57,6 @@
 
   text-align: left;
   padding-right: 45%;
-}
-.PProjects {
-  font-size: 20px;
-}
-.BtnProjects {
-  display: flex;
-  border: 1px solid darkgray;
-  width: 50px;
-  border-radius: 5px;
-  margin-top: 10px;
-  padding: 0 5px;
-  font-weight: bolder;
 }
 
 .animation {
