@@ -23,7 +23,7 @@ export default function Projects() {
               Plataforma de gestao financeira, agende, calcule e melhore sua
               gestão financeira de forma rapida e segura.
             </p>
-            <button className="BtnProjects"><a href="https://github.com/matheusjean28">{"Ver Projeto"}</a></button>
+            {/* <button className="BtnProjects"><a href="https://github.com/matheusjean28">{"Ver Projeto"}</a></button> */}
           </li>
         </ul>
         <div className="animation">

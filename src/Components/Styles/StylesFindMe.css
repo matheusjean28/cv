@@ -1,7 +1,6 @@
 .findMe {
-    background-color: aquamarine;
     height: inherit;
-    color: gray;
+    color: darkgray;
     padding: 25px 50px;
     height: 500px;
     text-align: left;
@@ -24,7 +23,7 @@
     height: 100px;
     position: relative;
     border-radius: 10px;
-    background-color: rgb(14, 174, 174);
+    background-color:aquamarine;
     display: flex;
     flex-direction: column;
     place-content: center;

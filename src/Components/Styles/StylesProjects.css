@@ -35,7 +35,7 @@
   width: fit-content;
   border-radius: 5px;
   border: none;
-  
+  margin-top: 10PX;
   padding: 5px 20px ;
   font-weight: bolder;
   border-radius: 50px;
@@ -54,9 +54,9 @@ box-shadow: inset 16px 16px 32px #bebebe,
   justify-content: left;
   justify-items: left;
   padding: 5px 0;
-
+  
   text-align: left;
-  padding-right: 45%;
+
 }
 
 .animation {
@@ -73,7 +73,6 @@ box-shadow: inset 16px 16px 32px #bebebe,
   .Projects {
     padding: 50px;
     height: 400px;
-    background-color: darkslateblue;
     place-content: left;
     place-items: left;
     display: flex;

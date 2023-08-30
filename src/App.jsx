@@ -9,12 +9,12 @@ function App() {
 
   return (
     <>
-    {/* <Header/> */}
-    {/* <AboutMe/> */}
-    {/* <Projects/> */}
+    <Header/>
+    <AboutMe/>
+    <Projects/>
     <Frameworks/>
     <FindMe/>
-    {/* <Copy/> */}
+    <Copy/>
     </>
   )
 }

@@ -1,8 +1,8 @@
 .UlStyle {
-  background-color: darkgray;
   display: flex;
   width: inherit;
   height: 50px;
+  background-color: darkgray;
   place-content: center;
   place-items: center;
   min-width: 320px;
@@ -24,7 +24,6 @@
     display: flex;
     place-content: center;
     place-items: center;
-    background-color: red;
   }
   .BtnPosition {
     border-radius: 5px;

@@ -1,8 +1,7 @@
 
 const StylesAboutMe = {
     divStl: {
-        backgroundColor: 'var(--bgColor)',
-        color: 'var(--mainColor)',
+        color: 'darkgray',
     }, PStl: {
         translate:"ease-in-out .1s"
     },
