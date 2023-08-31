@@ -30,7 +30,7 @@ export default function AboutMe() {
         >
           {"Ver Mais > "}
         </button>
-      </div>
+          </div>
     </>
   );
 }

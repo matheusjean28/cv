@@ -11,14 +11,14 @@
   -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
     both;
   animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  max-height: 200px;
-  overflow: hidden;
+  max-height: 350px;
   text-overflow: ellipsis;
   word-wrap: break-word;
-  padding-right: 25%;
+  padding-right: 15%;
 }
 .btnHeigth {
   margin-top: 20px !important;
+  padding: 50px 100px;
   transition: ease-in-out 0.5s;
 }
 
@@ -28,8 +28,10 @@
   }
   .PStl {
     margin-top: 25px;
-  padding-right: 10%;
-
+  }
+  .btnHeigth {
+    height: 50px;
+    margin-bottom: 50px;
   }
 }
 
