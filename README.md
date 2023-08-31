@@ -45,3 +45,9 @@ Supose that you have fineshi your changes, make sure to do an inspection by whol
 ```http
   npm run build
 ```
+
+
+--- 
+
+If you want to see this figma, here is the link:
+[Figma](https://www.figma.com/file/25z3nr57Ne7nYqAIAsMet6/profile?type=design&mode=design&t=URFrdpjt5Ok8WS6Z-1)
