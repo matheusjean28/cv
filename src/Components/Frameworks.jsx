@@ -5,7 +5,7 @@ export default function Frameworks() {
   return (
     <>
       <div className="frameworks">
-        <h1>Ferramentas</h1>
+        <h1 className="h1Frame">Ferramentas</h1>
         <p className="PFrameworks">
           Estas são algumas das ferramentas com as quais eu tive mais contato.
         </p>

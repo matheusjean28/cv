@@ -1,7 +1,7 @@
 .Projects {
   display: flex;
   color: var(--mainColor);
-  padding: 50px 100px;
+  padding: 50px 100px 0 100px;
   height: 500px;
   max-height: 500px;
   flex-direction: column;
@@ -43,6 +43,11 @@ background: #e0e0e0;
 box-shadow: inset 16px 16px 32px #bebebe,
             inset -16px -16px 32px #ffffff;
 }
+
+.BtnProjectsRigth {
+  height: fit-content;
+
+}
 .BtnProjects > a {
   text-decoration: none;
   color: black;
@@ -56,6 +61,7 @@ box-shadow: inset 16px 16px 32px #bebebe,
   padding: 5px 0;
   
   text-align: left;
+
 
 }
 
@@ -102,6 +108,6 @@ box-shadow: inset 16px 16px 32px #bebebe,
     padding-left: 45%;
   }
   .LiProjectsRigth > button {
-    margin-left: calc(100% - 50px);
+    margin-left: calc(100% - 115px);
   }
 }

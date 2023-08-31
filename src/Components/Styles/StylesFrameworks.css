@@ -1,16 +1,19 @@
 .frameworks {
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: 350px;
   padding: 50px 100px;
-  text-align: left;
+  text-align: center;
   color: var(--mainColor);
 }
+.h1Frame{
+padding: 0;
 
+}
 .PFrameworks {
-  padding-right: 10%;
   font-size: 12px;
   margin-top: 10px;
+  text-align: center;
 }
 
 .UlFrameworks {
@@ -22,6 +25,8 @@
   font-weight: bolder;
   list-style: none;
   padding: 0;
+  justify-content: center;
+  gap: 25px;
 }
 
 .LiFrameworks {
@@ -38,9 +43,10 @@
 }
 
 @media screen and (max-width: 600px) {
-    .frameworks {
-        padding: 25px 50px;
-    }
+  .frameworks {
+    padding: 25px 50px;
+    text-align: left;
+  }
   .UlFrameworks {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -54,5 +60,11 @@
     place-content: center;
     place-items: center;
     display: flex;
+  }
+  .PFrameworks {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: left;
+    margin-right: 10%;
   }
 }

@@ -1,41 +1,73 @@
 .findMe {
-    height: inherit;
-    color: darkgray;
-    padding: 25px 50px;
-    height: 500px;
-    text-align: left;
-    position: relative;
+  height: inherit;
+  color: #a9a9a9;
+  padding: 25px 50px;
+  height: 400px;
+  text-align: center;
+  position: relative;
 }
-.PVindMeDescription{
- font-size: 12px;
- margin: 25px 0;
-
+.PVindMeDescription {
+  font-size: 12px;
+  margin: 25px 0;
 }
 .UlFindMe {
-    display:  grid;
-    grid-template-columns: repeat(3, 1fr);
-    list-style: none;
-    height: inherit;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  list-style: none;
+  height: inherit;
+  padding: 0;
+  gap: 10px;
+  justify-content: center;
 }
+
 
 .LiFindMe {
-    height: 100px;
-    position: relative;
-    border-radius: 10px;
-    background-color:aquamarine;
-    display: flex;
-    flex-direction: column;
-    place-content: center;
-    place-items: center;
-    margin-top: 25px;
-}
-.PFindMe{
- margin-bottom: 15px;   
- font-size: 12px;
-}
-.LiFindMe > button{
-    border: none;
-    background:none;
+  height: 100px;
+  position: relative;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  margin-top: 25px;
+  border-radius: 15px;
+  background: linear-gradient(315deg, #ffffff, #e6e6e6);
+  box-shadow: -6px -6px 12px #c7c7c7, 6px 6px 12px #f4f0f0;
+  overflow: hidden;
 }
 
+
+.AProjects {
+  cursor: pointer;
+}
+
+.PFindMe {
+  font-size: 12px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.LiFindMe:hover > .PFindMe {
+  opacity: 1;
+  transform: translateY(0);
+}
+.LiFindMe > button {
+  border: none;
+  background: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .findMe {
+        text-align:left;
+      }
+    .UlFindMe {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        list-style: none;
+        height: inherit;
+        gap: 10px;
+      }   
+}

@@ -12,21 +12,38 @@ export default function FindMe() {
         </p>
         <ul className="UlFindMe">
           <li className="LiFindMe">
+            <button>
+              <a className="AProjects" href="https://github.com/matheusjean28">
+                <img src="src/assets/icons8-github-30.svg" alt="" />
+              </a>
+            </button>
             <p className="PFindMe">GitHub</p>
-            <button>{"visitar >"}</button>
           </li>
-         
+
           <li className="LiFindMe">
+            <button>
+              <a
+                className="AProjects"
+                href="https://www.linkedin.com/in/matheus-jean-devmatth-6b909a1b6/"
+              >
+                <img src="src/assets/icons8-linkedin-26.svg" alt="" />
+              </a>
+            </button>
             <p className="PFindMe">Linkedin</p>
-            <button>{"visitar >"}</button>
           </li>
-         
+
           <li className="LiFindMe">
+            <button>
+              <a
+                className="AProjects"
+                href="https://www.instagram.com/_m4tthh___/"
+              >
+                <img src="src/assets/icons8-instagram-30.svg" alt="" />
+              </a>
+            </button>
             <p className="PFindMe">Instagram</p>
-            <button>{"visitar >"}</button>
           </li>
         </ul>
-       
       </div>
     </>
   );

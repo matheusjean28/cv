@@ -1,5 +1,5 @@
 import React from "react";
-import { Audio, ProgressBar } from "react-loader-spinner";
+import { ProgressBar } from "react-loader-spinner";
 import "./Styles/StylesProjects.css";
 export default function Projects() {
   return (
@@ -23,9 +23,10 @@ export default function Projects() {
               Plataforma de gestao financeira, agende, calcule e melhore sua
               gestão financeira de forma rapida e segura.
             </p>
-            {/* <button className="BtnProjects"><a href="https://github.com/matheusjean28">{"Ver Projeto"}</a></button> */}
+            <button className="BtnProjects  "><a href="https://github.com/matheusjean28">{"Ver Projeto"}</a></button>
           </li>
         </ul>
+      </div>
         <div className="animation">
           <ProgressBar
             ariaLabel="progress-bar-loading"
@@ -34,7 +35,6 @@ export default function Projects() {
             barColor="#51E5FF"
           />
         </div>
-      </div>
     </>
   );
 }
