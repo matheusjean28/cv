@@ -70,4 +70,8 @@
         height: inherit;
         gap: 10px;
       }   
+       .PFindMe {
+        opacity: 1;
+        transform: translateY(0);
+      }
 }

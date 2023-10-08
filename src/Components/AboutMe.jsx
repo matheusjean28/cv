@@ -15,12 +15,7 @@ export default function AboutMe() {
         <h3>Um Pouco Sobre MIM</h3>
         {BtnMore && (
           <p className="PStl" style={PStl}>
-            Apenas um jovem dedicado a se destacar na esfera de
-            desenvolvimento de software. Inerentemente motivado pelos desafios
-            dinâmicos da tecnologia, meu entusiasmo pelo design gráfico
-            complementa minha abordagem multidisciplinar. Possuo uma
-            criatividade afiada, uma mentalidade de solucionador ágil e uma
-            profunda paixão por compartilhar soluções inovadoras.
+            Sou um jovem determinado a me destacar no mundo do desenvolvimento de software. Minha motivação vem dos desafios que a tecnologia sempre traz. Tenho uma mente criativa afiada, gosto de resolver problemas e tenho uma grande curiosidade em entender como as coisas funcionam, tentando replicá-las à minha maneira. Meu foco é me tornar um desenvolvedor versátil, aproveitando minha habilidade em encontrar soluções para problemas complexos.
           </p>
         )}
         <button

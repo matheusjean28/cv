@@ -18,12 +18,11 @@ export default function Projects() {
           </li>
 
           <li className="LiProjectsRigth">
-            <h5>AGILE GEST</h5>
+            <h5>MAC SAVE</h5>
             <p className="PProjects">
-              Plataforma de gestao financeira, agende, calcule e melhore sua
-              gestão financeira de forma rapida e segura.
+              atualmente este projeto esta apenas recebendo mudanças na API,<br/> já é possivel salvar um arquivos .CSV via post na API e salvar os dados validados no banco de dados Sqlite.
             </p>
-            <button className="BtnProjects  "><a href="https://github.com/matheusjean28">{"Ver Projeto"}</a></button>
+            <button className="BtnProjects  "><a href="https://github.com/matheusjean28/mac_register">{"Ver Projeto"}</a></button>
           </li>
         </ul>
       </div>
