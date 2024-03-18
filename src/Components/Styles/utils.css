@@ -1,9 +1,9 @@
 .divStl {
   display: flex;
   flex-direction: column;
-  height: 325px;
+  height: 250px;
   padding: 50px 100px;
-  text-align: left;
+  text-align: center;
   position: relative;
 }
 
@@ -14,7 +14,12 @@
   max-height: 350px;
   text-overflow: ellipsis;
   word-wrap: break-word;
-  padding-right: 15%;
+  display: flex;
+
+  margin:  0 15%;
+  
+  place-content: center;
+  place-items: center;
 }
 .btnHeigth {
   margin-top: 20px !important;
@@ -25,7 +30,7 @@
 @media screen and (max-width: 600px) {
   .divStl {
     height: 400px;
-    padding:  50px;
+    padding: 50px;
   }
   .PStl {
     margin-top: 25px;

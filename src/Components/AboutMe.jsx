@@ -3,29 +3,27 @@ import "./Styles/utils.css";
 import StylesAboutMe from "./Styles/StylesAboutMe";
 export default function AboutMe() {
   const { divStl, BntStl, PStl } = StylesAboutMe;
-  const [BtnMore, setBtnMore] = useState(false);
-
-  const handleBtn = () => {
-    setBtnMore(!BtnMore);
-  };
 
   return (
     <>
       <div style={divStl} className="divStl">
         <h3>Um Pouco Sobre MIM</h3>
-        {BtnMore && (
-          <p className="PStl" style={PStl}>
-            Sou um jovem determinado a me destacar no mundo do desenvolvimento de software. Minha motivação vem dos desafios que a tecnologia sempre traz. Tenho uma mente criativa afiada, gosto de resolver problemas e tenho uma grande curiosidade em entender como as coisas funcionam, tentando replicá-las à minha maneira. Meu foco é me tornar um desenvolvedor versátil, aproveitando minha habilidade em encontrar soluções para problemas complexos.
-          </p>
-        )}
-        <button
-          onClick={handleBtn}
-          className={BtnMore ? "btnHeigth" : ""}
-          style={BntStl}
-        >
-          {"Ver Mais > "}
-        </button>
-          </div>
+        <p className="PStl" style={PStl}>
+          Estou determinado a me destacar no mundo do desenvolvimento de
+          software. Me motivo com tecnologias que ainda não conheço, também amo
+          linguagens de baixo nivel, procurando entender como as coisas
+          funcionam por baixo dos panos, sempre explorando recriar sistemas que
+          despertam minha curiosidade. <br />
+          Meu foco atualmente é o Back-end, minha linguagem de ponto forte é
+          Csharp, usando Dotnet 7.0 e relacionados, mas não me limitando a ela,
+          também gosto de me desafiar com tecnologias de tempo-real, tais quais
+          Sockets, SignalR e mensageria com RabbitMQ e SQS. <br/>Me adpto facil com
+          novas sintaxes, enfrento os problemas sempre tentando dividilos em
+          partes menores com abordagens que tonam-os mais faceis de visualizar e
+          resolver. <br/><br/>"Sou a melhor escolha se precisa de um desenvolvedor aberto
+          a aprender e buscar soluções para problemas existentes!"
+        </p>
+      </div>
     </>
   );
 }

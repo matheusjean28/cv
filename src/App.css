@@ -9,6 +9,8 @@
   height: 100%;
   --mainColor: gray;
   --bgColor: black;
+
+  font-size: 14px;
 }
 
 /* future media query */
