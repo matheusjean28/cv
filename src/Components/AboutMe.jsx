@@ -6,9 +6,9 @@ export default function AboutMe() {
 
   return (
     <>
-      <div style={divStl} className="divStl">
-        <h3>Um Pouco Sobre MIM</h3>
-        <p className="PStl" style={PStl}>
+      <div  className="divStl">
+        <h3 className="aboutMeH3">Um Pouco Sobre MIM</h3>
+        <p className="PStl" >
           Estou determinado a me destacar no mundo do desenvolvimento de
           software. Me motivo com tecnologias que ainda não conheço, também amo
           linguagens de baixo nivel, procurando entender como as coisas

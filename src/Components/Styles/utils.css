@@ -29,16 +29,20 @@
 
 @media screen and (max-width: 600px) {
   .divStl {
-    height: 400px;
-    padding: 50px;
+    position: relative;
+    padding: 25px;
+    display: flex;
+    flex-direction:column;
+    place-items: center;
+    place-content: center;
+
+    height: 650px;
+  }
+  .aboutMeH3 {
+    top: 20px;
+    position: absolute;
   }
   .PStl {
-    margin-top: 25px;
-    margin-bottom: 50px;
-  }
-  .btnHeigth {
-    height: 50px;
-    margin-bottom: 50px;
   }
 }
 
