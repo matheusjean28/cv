@@ -11,14 +11,22 @@
 
   padding: 5px;
   height: 610px;
-  width: 35%;
+  width: 45%;
 
-  background-color: rgba(52, 43, 43, 0.971);
+  background-color: rgba(0, 0, 0, 0.943);
 
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 
   transition: all ease-in-out .2s;
+
+  transition: all 0.3s ease-in-out; 
+  transform: translateX(100%);
+}
+
+.RigthModalConteiner.show {
+  transform: translateX(-0%)
+  
 }
 
 .RigthModalConteiner::-webkit-scrollbar {
@@ -32,7 +40,7 @@
   width: 20px;
   height: 20px;
   font-weight: bolder;
-  color: rebeccapurple;
+  color: rgb(127, 68, 187);
   background: none;
   position: absolute;
 
@@ -49,6 +57,9 @@
 }
 
 .ulModelConteiner {
+  transition: all ease-in-out .2s;
+
+    
   display: flex;
   flex-direction: column;
 

@@ -1,4 +1,5 @@
 .UlStyle {
+  
   display: flex;
   width: inherit;
   height: 50px;
@@ -26,6 +27,7 @@
 /* media query area */
 @media screen and (max-width: 600px) {
   .UlStyle {
+
     height: 50px;
     display: flex;
     place-content: center;
