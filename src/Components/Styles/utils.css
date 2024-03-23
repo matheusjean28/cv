@@ -36,13 +36,11 @@
     place-items: center;
     place-content: center;
 
-    height: 650px;
+    height: 700px;
   }
   .aboutMeH3 {
     top: 20px;
     position: absolute;
-  }
-  .PStl {
   }
 }
 
