@@ -13,11 +13,11 @@ function App() {
     const [showModel, setShowModel] = useState(false);
   return (
     <>
-      {/* <RigthModal  showModel={showModel} setShowModel={setShowModel} />
-      <Header  showModel={showModel} setShowModel={setShowModel} /> */}
-       {/* <AboutMe />
+      <RigthModal  showModel={showModel} setShowModel={setShowModel} />
+      <Header  showModel={showModel} setShowModel={setShowModel} />
+       <AboutMe />
        <Projects />
-       <Frameworks /> */}
+       <Frameworks />
        <FindMe />
        <Copy /> 
     </>)
