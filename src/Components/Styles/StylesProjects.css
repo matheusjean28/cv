@@ -1,113 +1,148 @@
 .Projects {
   display: flex;
-  color: var(--mainColor);
-  padding: 50px 100px 0 100px;
+  flex-direction: column;
   height: 500px;
   max-height: 500px;
-  flex-direction: column;
-  justify-content: left;
-  text-align: left;
+  padding: 20px;
 }
 
 .UlProjects {
-  flex-direction: column;
-  list-style: none;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  gap: 10px;
+  list-style-type: none;
   padding: 0;
+  flex-wrap: wrap;
 }
 
-.LiProjects {
+.ProjectCard {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  justify-items: left;
-  padding: 5px ;
-  
+  height: 200px;
+  width: 300px;
+  background-color: #4e217d;
+  padding: 10px;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  position: relative;
   text-align: left;
-  padding-right: 45%;
+  border-radius: 13px;
+  background: #4e217d;
+  box-shadow: -2px -2px 10px #30144e, 2px 2px 5px #6c2ead;
+}
 
-  
-}
-.PProjects {
-  font-size: 16px;
-}
-.BtnProjects {
+.descriptionSize {
+  position: relative;
   display: flex;
-  width: fit-content;
+  font-size: 10px;
+  animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  max-height: 250px;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+/* Tooltip */
+.tooltip {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
   border-radius: 5px;
-  border: none;
-  margin-top: 10PX;
-  padding: 5px 20px ;
-  font-weight: bolder;
-  border-radius: 50px;
-background: #e0e0e0;
-box-shadow: inset 16px 16px 32px #bebebe,
-            inset -16px -16px 32px #ffffff;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: -500%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
-.BtnProjectsRigth {
-  height: fit-content;
-
-}
-.BtnProjects > a {
-  text-decoration: none;
-  color: black;
+.descriptionSize:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
-.LiProjectsRigth {
+.stackContainer {
   display: flex;
-  flex-direction: column;
-  justify-content: left;
-  justify-items: left;
-  padding: 5px 0;
-  
-  text-align: left;
-
-
+  padding: 10px;
+  flex-wrap: wrap;
+  gap: 2px;
 }
 
+.stackNameSize {
+  font-size: 9px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 5px;
+  font-family: monospace;
+  background-color: #007bff;
+  padding: 3px;
+  place-content: center;
+  place-items: center;
+  display: flex;
+  border-radius: 3px;
+  font-weight: bolder;
+}
+
+.githubButton {
+  position: absolute;
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  bottom: 10px;
+  right: 10px;
+}
+
+.githubButton a {
+  text-decoration: none;
+  color: #000;
+}
+
+.githubButton a:hover {
+  color: #007bff;
+}
+
+/* Animation */
 .animation {
   margin: 0;
   padding: 0;
   height: inherit;
   display: flex;
   place-content: center;
-
 }
 
-/* media query area */
+/* Media Query */
 @media screen and (max-width: 600px) {
   .Projects {
     padding: 50px;
-    height: 400px;
     place-content: left;
     place-items: left;
-    display: flex;
   }
   .UlProjects {
     display: flex;
-    padding: 0;
-    justify-content: left;
-    text-align: left;
-    margin-top: 25px;
   }
-  .PProjects {
-    font-size: 12px;
-    margin-top: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-  }
-  .LiProjectsRigth {
-    justify-content: right;
-    justify-items: right;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin-bottom: 50px;
-    padding-left: 45%;
-  }
-  .LiProjectsRigth > button {
-    margin-left: calc(100% - 115px);
+  .ProjectCard {
+    height: 150px;
+    width: 200px;
   }
 }
+
+/* Media Queries */
+/* @media screen and (max-width: 600px) {
+  .Projects {
+    height: auto;
+    padding: 50px;
+    place-items: center;
+  }
+
+  .UlProjects {
+    display: grid;
+    grid-template-rows: repeat(1fr, 2);
+
+  } */
+/* } */

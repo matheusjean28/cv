@@ -31,7 +31,7 @@
   .portifolioContainer {
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 200px;
     padding: 25px 50px;
     text-align: center;
     place-items: center;
