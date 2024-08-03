@@ -1,28 +1,47 @@
-import { useState } from "react";
 import "./Styles/utils.css";
+import { Github, Instagram, Linkedin } from "lucide-react";
 import StylesAboutMe from "./Styles/StylesAboutMe";
 export default function AboutMe() {
-  const { divStl, BntStl, PStl } = StylesAboutMe;
-
+  const findMeItems = [
+    {
+      link: "https://github.com/matheusjean28",
+      icon: <Github size={18}/>,
+    },
+    {
+      link: "https://www.linkedin.com/in/matheus-jean-devmatth-6b909a1b6/",
+      icon: <Linkedin size={18} />,
+    },
+    {
+      link: "https://www.instagram.com/_m4tthh___/",
+      icon: <Instagram size={18}/>,
+    },
+  ];
   return (
     <>
-      <div  className="divStl">
-        <h3 className="aboutMeH3">Um Pouco Sobre MIM</h3>
-        <p className="PStl" >
-          Estou determinado a me destacar no mundo do desenvolvimento de
-          software. Me motivo com tecnologias que ainda não conheço, também amo
-          linguagens de baixo nivel, procurando entender como as coisas
-          funcionam por baixo dos panos, sempre explorando recriar sistemas que
-          despertam minha curiosidade. <br />
-          Meu foco atualmente é o Back-end, minha linguagem de ponto forte é
-          Csharp, usando Dotnet 7.0 e relacionados, mas não me limitando a ela,
-          também gosto de me desafiar com tecnologias de tempo-real, tais quais
-          Sockets, SignalR e mensageria com RabbitMQ e SQS. <br/>Me adpto facil com
-          novas sintaxes, enfrento os problemas sempre tentando dividilos em
-          partes menores com abordagens que tonam-os mais faceis de visualizar e
-          resolver. <br/><br/>"Sou a melhor escolha se precisa de um desenvolvedor aberto
-          a aprender e buscar soluções para problemas existentes!"
-        </p>
+      <div className="divStl">
+        <div className="leftDiv">
+        <img  className='profilePic' src="src/assets/profile-1.jpg" alt="" />
+        
+        </div>
+        <div className="rigthDiv">
+          <h2>Sou Matheus!</h2>
+          <p className="descriptionMe">
+            Tenho 23 anos, meu objetivo é se especializar na área de
+            desenvolvimento de software. Tenho me aperfeiçoado na área com
+            cursos e livros, ágil para encontrar soluções, sei pesquisar por
+            respostas para os problemas e compartilhar as soluções!
+          </p>
+
+          <ul className="socialLinks">
+            {findMeItems.map(({ icon, link }, index) => (
+              <li key={index}>
+                <button>
+                  <a href={`${link}`}>{icon}</a>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </>
   );

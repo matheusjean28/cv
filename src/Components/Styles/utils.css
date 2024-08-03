@@ -1,13 +1,50 @@
 .divStl {
   display: flex;
-  flex-direction: column;
-  height: 250px;
+  height: 300px;
   padding: 50px 100px;
-  text-align: center;
+  text-align: left;
   position: relative;
 }
+.leftDiv {
+  margin-top: 25px;
+  width: 50%;
+  display: flex;
+  place-content: center;
+}
+.profilePic {
+  height: 200px;
+  border-radius: 5px;
+  filter: brightness(55%);
+}
 
-.PStl {
+.rigthDiv {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  place-content: left;
+  place-items: left;
+}
+.socialLinks {
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  left: 0px;
+}
+.socialLinks li {
+  width: 30px;
+}
+.socialLinks button,
+.socialLinks a {
+  border: none;
+  background: none;
+  color: aliceblue;
+}
+
+.descriptionMe {
   -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
     both;
   animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
@@ -16,10 +53,8 @@
   word-wrap: break-word;
   display: flex;
 
-  margin:  0 15%;
-  
-  place-content: center;
-  place-items: center;
+  place-content: left;
+  place-items: left;
 }
 .btnHeigth {
   margin-top: 20px !important;
@@ -32,15 +67,19 @@
     position: relative;
     padding: 25px;
     display: flex;
-    flex-direction:column;
     place-items: center;
     place-content: center;
-
-    height: 700px;
+    background-color: blueviolet;
+    height: 300px;
   }
-  .aboutMeH3 {
-    top: 20px;
-    position: absolute;
+  .profilePic {
+    height: 150px;
+    margin-bottom: 100px;
+  }
+  .descriptionMe {
+    
+    place-content: center;
+    place-items: center;
   }
 }
 

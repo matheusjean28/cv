@@ -8,6 +8,7 @@ import Copy from "./Components/Copy";
 import RigthModal from "./Components/RigthModal";
 
 import { useState } from "react";
+import Portifolio from "./Components/Portifolio";
 
 function App() {
     const [showModel, setShowModel] = useState(false);
@@ -16,6 +17,7 @@ function App() {
       <RigthModal  showModel={showModel} setShowModel={setShowModel} />
       <Header  showModel={showModel} setShowModel={setShowModel} />
        <AboutMe />
+      <Portifolio/>
        <Projects />
        <Frameworks />
        <FindMe />
